@@ -1,0 +1,68 @@
+
+:root {
+  --primary: #8e6628;
+  --blue: #e3c872;
+  scroll-behavior: smooth;
+
+}
+
+.primary-color {
+  color: var(--primary)
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.hero-bg {
+  background-image: url('../images/work8.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position:left; 
+  filter: blur(2px);
+  height: 100%;
+  -webkit-filter: blur(2px);
+}
+.bg-image {
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-bg {
+    background-size: cover;
+    background-position:center
+  }
+
+  .float{
+    bottom:40px;
+    right:20px;
+  }
+
+}
